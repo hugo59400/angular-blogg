@@ -1,0 +1,9 @@
+<h2>{{ title }}</h2>
+
+
+<h4>{{created_at | date: 'EEEE d MMMM y' }}</h4>
+<p>{{ content }}</p>
+<button (click)="resetLike()">Reset Like </button> &nbsp;&nbsp;
+<button (click)="resetDislike()">Reset DisLike </button> &nbsp;&nbsp;
+<button (click)="onLoveIt()">Like</button> &nbsp;&nbsp;
+<button (click)="onDontLoveIt()">Dislike</button> <br> <br> Nombre de like : {{ loveIts }} <br> <br> Nombre de Dislike : {{ DisloveIts }}
